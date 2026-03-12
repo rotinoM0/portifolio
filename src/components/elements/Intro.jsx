@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Trail from "@/components/mouse-trail/trail";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Background from "../threejs/background";
 
 export default function Intro() {
     const containerRef = useRef(null);
@@ -12,15 +13,16 @@ export default function Intro() {
     return (
         <>
             {/* Introdução */}
-            <div ref={containerRef} className="md:cursor-none relative flex min-h-screen items-center justify-center bg-[#080217] font-sans dark:bg-blue overflow-hidden px-4 sm:px-6">
+            <div id="intro" ref={containerRef} className="md:cursor-none relative flex min-h-screen items-center justify-center  font-sans dark:bg-blue overflow-hidden px-4 sm:px-6">
+                <Background />
                 {/* pass a ref of the main container to Trail so it confines inside */}
                 <Trail parentRef={containerRef} />
                 {/* Conteúdo central */}
-                <div className="flex justify-center w-full md:w-1/2 p-6 md:pl-16 z-[10]">
+                <div className="flex justify-evenly w-full md:w-1/2 p-6 md:pl-16 z-[10]">
                     <div className="flex flex-col items-center mb-8 w-full">
                         <div className="flex flex-col w-full font-bold font-mono justify-end text-right my-6 space-y-2">
                             <h1 className="flex w-full justify-end text-4xl sm:text-5xl md:text-3xl lg:text-5xl text-zinc-900 dark:text-zinc-100">Olá! Eu sou</h1>
-                            <h2 className="flex w-full justify-end text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-teal-900 dark:text-teal-400">Matheus Fernandes</h2>
+                            <h2 className="flex w-full justify-end text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-teal-900 dark:text-teal-400 slide">Matheus Fernandes</h2>
                             <h2 className="flex w-full justify-end text-xl  sm:text-4xl md:text-3xl lg:text-3xl text-zinc-900 dark:text-zinc-100">Desenvolvedor FullStack</h2>
                         </div>
                         {/* Botões */}
