@@ -11,13 +11,56 @@ textarea {
     resize: none;
 }
 
+.title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.slide {
+    animation: slide 2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* ----- Sobre --------*/
+
+.stack-item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid teal;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stack-item:hover {
+    background-color: teal;
+}
+
+/* ----- Projetos ----- */
+
 .card {
     font-family: 'Franklin Gothic Medium';
+    overflow: hidden;
     transition: 0.3s;
     z-index: 0;
-    width: 300px;
-    height: 450px;
-    margin: auto -45px;
+    width: clamp(250px, 20vw, 300px);
+    height: clamp(400px, 30vw, 450px);
+    margin: 10px 5px;
     border-radius: 20px;
     border: 10px solid #797979;
     box-shadow: -5px 5px rgba(0, 0, 0, 0.3);
@@ -26,8 +69,26 @@ textarea {
 .card:hover {
     z-index: 1;
     transform: translate(0, -40px);
-    margin: auto 10px;
+    margin: 10px 5px;
     box-shadow: -10px 10px rgba(0, 0, 0, 0.5), 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-desc {
+    color: #c1c1c1;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.deck {
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+    z-index: 0;
+    width: clamp(250px, 20vw, 300px);
+    height: clamp(400px, 30vw, 450px);
+    margin: auto -45px;
+    border-radius: 20px;
+    border: 10px solid #797979;
+    box-shadow: 5px 5px rgba(121, 121, 121, 0.5), 10px 10px rgba(121, 121, 121, 0.5), 15px 15px rgba(121, 121, 121, 0.5);
 }
 
 .links {
@@ -37,3 +98,5 @@ textarea {
     color: white;
     font-weight: bold;
 }
+
+/* --------------------------------------- */
