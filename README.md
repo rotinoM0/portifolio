@@ -62,20 +62,21 @@ src/
 
 ```
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - ✅ Design responsivo
-- ✅ Animações 3D interativas com Three.js
+- ✅ Imagens de alta resolução com SVG
 - ✅ Efeito de trilha do mouse
 - ✅ Fundo com partículas animadas
+- ✅ Projetos personalizados com efeito de cartas
 - ✅ Formulário de contato funcional (Formspree)
 - ✅ Links para redes sociais
 
 ## 📧 Contato
 
 - **Email**: contato.matheus.fs12@gmail.com
-- **LinkedIn**: [seu-perfil]
-- **Instagram**: [seu-perfil]
+- **LinkedIn**: https://www.linkedin.com/in/matheus-fernandes-77aa2026a/
+- **Instagram**: https://www.instagram.com/matheus._fs/
 
 ## 📝 Licença
 
@@ -83,4 +84,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Desenvolvido com ❤️ por Matheus Fernandes
+Desenvolvido por Matheus Fernandes
