@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio - Matheus Fernandes
 
-## Getting Started
+Um portfólio moderno e interativo desenvolvido com Next.js e Three.js, apresentando projetos e oferecendo forma de contato com animações 3D.
 
-First, run the development server:
+## 🚀 Tecnologias
 
+- **[Next.js 16](https://nextjs.org)** - Framework React com SSR e otimizações
+- **[React 19](https://react.dev)** - Biblioteca para construção de interfaces
+- **[Three.js](https://threejs.org)** - Gráficos 3D no navegador
+- **[Tailwind CSS 4](https://tailwindcss.com)** - Estilização utilitária
+- **[Lucide React](https://lucide.dev)** - Ícones SVG
+
+## 💻 Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <seu-repositório>
+cd portifolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🏃 Como Executar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Modo de desenvolvimento:**
+```bash
+npm run dev
+```
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-## Learn More
+**Build para produção:**
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── layout.jsx          # Layout raiz
+│   ├── page.jsx            # Página principal
+│   ├── globals.css         # Estilos globais
+│   └── elements.css        # Estilos dos elementos
+├── components/
+│   ├── header.jsx          # Cabeçalho/Navegação
+│   ├── elements/           # Seções principais
+│   │   ├── Intro.jsx       # Seção introdutória
+│   │   ├── sobre.jsx       # Sobre mim
+│   │   ├── projetos.jsx    # Portfólio de projetos
+│   │   └── contato.jsx     # Formulário de contato
+│   ├── mouse-trail/        # Efeito de trilha do mouse
+│   ├── stars-particle/     # Efeito de partículas
+│   └── threejs/            # Componente Three.js
+└── assets/
+    ├── icons/              # Ícones customizados
+    └── models/             # Modelos 3D
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+## ✨ Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ✅ Design responsivo
+- ✅ Animações 3D interativas com Three.js
+- ✅ Efeito de trilha do mouse
+- ✅ Fundo com partículas animadas
+- ✅ Formulário de contato funcional (Formspree)
+- ✅ Links para redes sociais
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📧 Contato
+
+- **Email**: contato.matheus.fs12@gmail.com
+- **LinkedIn**: [seu-perfil]
+- **Instagram**: [seu-perfil]
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido com ❤️ por Matheus Fernandes
