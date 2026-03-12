@@ -14,7 +14,7 @@ Um portifólio moderno e interativo desenvolvido com Next.js e Three.js, apresen
 
 1. Clone o repositório:
 ```bash
-git clone <seu-repositório>
+git clone https://github.com/rotinoM0/portifolio.git
 cd portifolio
 ```
 
