@@ -1,6 +1,6 @@
-# Portfólio - Matheus Fernandes
+# Portifólio - Matheus Fernandes
 
-Um portfólio moderno e interativo desenvolvido com Next.js e Three.js, apresentando projetos e oferecendo forma de contato com animações 3D.
+Um portifólio moderno e interativo desenvolvido com Next.js e Three.js, apresentando projetos e oferecendo forma de contato com animações 3D.
 
 ## 🚀 Tecnologias
 
