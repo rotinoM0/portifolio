@@ -14,7 +14,7 @@ export default function Contato() {
                     </div>
                 </div>
                 <footer className="flex flex-col h-full justify-center items-center gap-5 text-zinc-100 my-10">
-                    <p>© 2025 Matheus Fernandes. Todos os direitos reservados.</p>
+                    <p>© 2025 Matheus Fernandes. </p>
                     <div className="flex">
                         <a href="" className="mx-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
