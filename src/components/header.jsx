@@ -20,11 +20,6 @@ export default function Header() {
                     <a href="#sobre">Sobre mim</a>
                     <a href="#projetos">Meus projetos</a>
                     <a href="#contato">contato</a>
-                    <button 
-                        className="ml-2 p-2 rounded-md text-gray-600 over:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-800 transition-colors"
-                    >
-                        <Sun />
-                    </button>
                 </div>
 
 
@@ -37,11 +32,6 @@ export default function Header() {
                         <a href="#sobre" className="text-white hover:text-teal-700 transition-colors">Sobre mim</a>
                         <a href="#projetos" className="text-white hover:text-teal-700 transition-colors">Meus projetos</a>
                         <a href="#contato" className="text-white hover:text-teal-700 transition-colors">Contato</a>
-                        <button 
-                            className="mt-2 p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
-                        >
-                            <Sun />
-                        </button>
                     </div>
                 )}
             </div>
