@@ -40,25 +40,25 @@ export default function Sobre() {
                     <p className="text-zinc-400">Tenho experiência com as seguintes tecnologias e ferramentas:</p>
                     <div className="flex flex-wrap justify-center items-center gap-10 mt-5">
                         
-                        <StackItem name="JavaScript" logo="/icons/js-logo.svg" />
-                        <StackItem name="TypeScript" logo="/icons/ts-logo.svg" />
-                        <StackItem name="HTML5" logo="/icons/html-logo.svg" />
-                        <StackItem name="CSS3" logo="/icons/css-logo.svg" />
-                        <StackItem name="C++" logo="/icons/cpp-logo.svg" />
-                        <StackItem name="C#" logo="/icons/csharp-logo.svg" />
-                        <StackItem name="Python" logo="/icons/python-logo.svg" />
+                        <StackItem name="JavaScript" logo="/portifolio/icons/js-logo.svg" />
+                        <StackItem name="TypeScript" logo="/portifolio/icons/ts-logo.svg" />
+                        <StackItem name="HTML5" logo="/portifolio/icons/html-logo.svg" />
+                        <StackItem name="CSS3" logo="/portifolio/icons/css-logo.svg" />
+                        <StackItem name="C++" logo="/portifolio/icons/cpp-logo.svg" />
+                        <StackItem name="C#" logo="/portifolio/icons/csharp-logo.svg" />
+                        <StackItem name="Python" logo="/portifolio/icons/python-logo.svg" />
 
-                        <StackItem name="Node.js" logo="/icons/node-logo.svg" />
-                        <StackItem name="React.js" logo="/icons/react-logo.svg" />
-                        <StackItem name="Next.js" logo="/icons/next-logo.svg" />
-                        <StackItem name="Tailwind CSS" logo="/icons/tailwind-logo.svg" />
-                        <StackItem name="Numpy" logo="/icons/numpy-logo.svg" />
-                        <StackItem name="Pandas" logo="/icons/pandas-logo.svg" />
+                        <StackItem name="Node.js" logo="/portifolio/icons/node-logo.svg" />
+                        <StackItem name="React.js" logo="/portifolio/icons/react-logo.svg" />
+                        <StackItem name="Next.js" logo="/portifolio/icons/next-logo.svg" />
+                        <StackItem name="Tailwind CSS" logo="/portifolio/icons/tailwind-logo.svg" />
+                        <StackItem name="Numpy" logo="/portifolio/icons/numpy-logo.svg" />
+                        <StackItem name="Pandas" logo="/portifolio/icons/pandas-logo.svg" />
                         
-                        <StackItem name="Git" logo="/icons/git-logo.svg" />
-                        <StackItem name="Linux" logo="/icons/linux-logo.svg" />
-                        <StackItem name="SQL" logo="/icons/sql-logo.svg" />
-                        <StackItem name="MongoDB" logo="/icons/mongodb-logo.svg" />
+                        <StackItem name="Git" logo="/portifolio/icons/git-logo.svg" />
+                        <StackItem name="Linux" logo="/portifolio/icons/linux-logo.svg" />
+                        <StackItem name="SQL" logo="/portifolio/icons/sql-logo.svg" />
+                        <StackItem name="MongoDB" logo="/portifolio/icons/mongodb-logo.svg" />
                     </div>
                 </div>
             </section>
