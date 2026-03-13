@@ -2,9 +2,10 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 function StackItem({ name, logo }) {
+    const fullLogoPath = `/portifolio${logo}`;
     return (
         <div className="stack-item box-shadow">
-            <Image src={logo} alt={`${name} Logo`} className="w-6 h-6 m-2" width={24} height={24} />
+            <Image src={fullLogoPath} alt={`${name} Logo`} className="w-6 h-6 m-2" width={24} height={24} />
             <span className="text-white font-bold">{name}</span>
         </div>
     );
@@ -29,7 +30,7 @@ export default function Sobre() {
                         <p className="text-zinc-400">Além de programar, gosto de participar de comunidades de tecnologia, compartilhar conhecimento e colaborar em projetos open source. Estou sempre aberto a novas oportunidades e desafios que me permitam crescer como profissional e contribuir para a comunidade tech.</p>
                     </div>
                     <div className="flex flex-1 items-center justify-center">
-                        <Image src="/pfp.png" alt="Foto de Perfil" className="w-64 h-64 rounded-full object-cover border-4 border-teal-400" width={256} height={256}/>
+                        <Image src="/portifolio/pfp.png" alt="Foto de Perfil" className="w-64 h-64 rounded-full object-cover border-4 border-teal-400" width={256} height={256}/>
                     </div>
                 </div>
 
