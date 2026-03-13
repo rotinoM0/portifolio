@@ -81,7 +81,7 @@ export default function Projetos() {
                                 { name: "React.js", logo: "/icons/react-logo.svg" },
                                 { name: "JavaScript", logo: "/icons/js-logo.svg" }
                             ]}
-                            projectLink="#"
+                            projectLink="https://github.com/rotinoM0/color-sound"
                             color="teal"
                         />
                         <Card
@@ -93,7 +93,7 @@ export default function Projetos() {
                                 { name: "TypeScript", logo: "/icons/ts-logo.svg" },
                                 { name: "React.js", logo: "/icons/react-logo.svg" }
                             ]}
-                            projectLink=""
+                            projectLink="https://github.com/rotinoM0/iris"
                             color="purple"
                         />
                     </div>
