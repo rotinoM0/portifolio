@@ -17,12 +17,17 @@ function Card({ title, titleLong, description, imageSrc, techStack, projectLink,
         "purple": "bg-purple-800",
     };
 
+    const updatedTechStack = techStack.map(tech => ({
+        ...tech,
+        logo: `/portifolio${tech.logo}`
+    }));
+
     return (
         <div className={`flex flex-col ${colorClasses[color] || colorClasses["teal"]} rat-project justify-between text-white card`}>
             {/* Title */}
             <div className="flex justify-between mx-2 items-center my-2">
                 <h3 className="pl-7 text-xl font-bold">{title}</h3>
-                <span><Image src={techStack[0].logo} alt={`${techStack[0].name} Logo`} className="w-6 h-6" width={24} height={24} /></span>
+                <span><Image src={updatedTechStack[0].logo} alt={`${updatedTechStack[0].name} Logo`} className="w-6 h-6" width={24} height={24} /></span>
             </div>
             {/* Body */}
             <div className="flex flex-col justify-between h-full">
@@ -30,7 +35,7 @@ function Card({ title, titleLong, description, imageSrc, techStack, projectLink,
                 <div className="flex flex-col gap-2">
                     <div className="flex w-full px-5 gap-2 items-center">
                         <div className="flex items-center gap-2">
-                            {techStack.map((tech, index) => (
+                            {updatedTechStack.map((tech, index) => (
                                 <Image key={index} src={tech.logo} alt={`${tech.name} Logo`} className="w-5 h-5 rounded-full object-cover" width={24} height={24} />
                             ))}
                         </div>
@@ -40,7 +45,7 @@ function Card({ title, titleLong, description, imageSrc, techStack, projectLink,
                 </div>
                 {/* Bottom */}
                 <div className="links flex items-center self-end">
-                    <span className="ml-2"><Image src="/icons/github-logo.svg" alt="GitHub Logo" className="w-5 h-5" width={24} height={24} /></span>
+                    <span className="ml-2"><Image src="/portifolio/icons/github-logo.svg" alt="GitHub Logo" className="w-5 h-5" width={24} height={24} /></span>
                     <a href={projectLink} className="text-white no-underline hover:underline">Ver Projeto</a>
                 </div>
             </div>
@@ -103,7 +108,7 @@ export default function Projetos() {
                             <div className={`flex flex-col bg-teal-500 rat-project justify-center text-white deck`}>
                                 <div className="flex flex-col justify-between items-center my-2">
                                     <h3 className=" text-xl font-bold">Mais Projetos</h3>
-                                    <span><Image src="/icons/github-logo.svg" alt={`GitHub Logo`} className="w-24 h-24" width={24} height={24} /></span>
+                                    <span><Image src="/portifolio/icons/github-logo.svg" alt={`GitHub Logo`} className="w-24 h-24" width={24} height={24} /></span>
                                 </div>
                             </div>
                         </a>
