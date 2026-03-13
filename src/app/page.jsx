@@ -8,7 +8,6 @@ import Projetos from "@/components/elements/projetos";
 import Contato from "@/components/elements/contato";
 
 import "./elements.css";
-import "../assets/pfp.jpg"
 
 export default function Home() {
     return (
