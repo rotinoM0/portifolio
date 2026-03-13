@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import ratImg from "../../assets/rat.png";
 import soundShapeImg from "../../assets/sound-shape.png";
-import hornet from "../../assets/hornet.jpg";
+import iris from "../../assets/iris.png";
 
 function Card({ title, titleLong, description, imageSrc, techStack, projectLink, color }) {
     const colorClasses = {
@@ -88,13 +88,13 @@ export default function Projetos() {
                             title="IRIS"
                             titleLong="I.R.I.S"
                             description="Sistema de registro de inventário para pequenas empresas, oferecendo uma interface intuitiva para gerenciamento de produtos e estoque"
-                            imageSrc={hornet}
+                            imageSrc={iris}
                             techStack={[
                                 { name: "TypeScript", logo: "/icons/ts-logo.svg" },
                                 { name: "React.js", logo: "/icons/react-logo.svg" }
                             ]}
                             projectLink=""
-                            color="blue"
+                            color="purple"
                         />
                     </div>
                     {/* deck (link to github) */}
