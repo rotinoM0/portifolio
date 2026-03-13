@@ -2,6 +2,8 @@
 
 Um portifólio moderno e interativo desenvolvido com Next.js e Three.js, apresentando projetos e oferecendo forma de contato com animações 3D.
 
+**[Acesse Online](https://rotinom0.github.io/portifolio/) -  Portifólio online
+
 ## 🚀 Tecnologias
 
 - **[Next.js 16](https://nextjs.org)** - Framework React com SSR e otimizações
