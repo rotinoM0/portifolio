@@ -1,51 +1,82 @@
 "use client";
 
 import React, { useRef } from "react";
-import Header from "@/components/header";
 import Trail from "@/components/mouse-trail/trail";
-import { ChevronDown } from "lucide-react";
-import Image from "next/image";
-import Background from "../threejs/background";
+import { DownloadCvButton } from "@/components/elements/formacoes";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+
+const SOCIALS = [
+    { href: "https://github.com/rotinoM0", label: "GitHub", Icon: Github },
+    { href: "https://www.linkedin.com/in/matheus-fernandes-77aa2026a/", label: "LinkedIn", Icon: Linkedin },
+    { href: "mailto:contato.matheus.fs12@gmail.com", label: "E-mail", Icon: Mail },
+];
 
 export default function Intro() {
     const containerRef = useRef(null);
 
     return (
-        <>
-            {/* Introdução */}
-            <div id="intro" ref={containerRef} className="md:cursor-none relative flex min-h-screen items-center justify-center  font-sans dark:bg-blue overflow-hidden px-4 sm:px-6">
-                <Background />
-                {/* pass a ref of the main container to Trail so it confines inside */}
-                <Trail parentRef={containerRef} />
-                {/* Conteúdo central */}
-                <div className="flex justify-evenly w-full md:w-1/2 p-6 md:pl-16 z-[10]">
-                    <div className="flex flex-col items-center mb-8 w-full">
-                        <div className="flex flex-col w-full font-bold font-mono justify-end text-right my-6 space-y-2">
-                            <h1 className="flex w-full justify-end text-4xl sm:text-5xl md:text-3xl lg:text-5xl text-zinc-900 dark:text-zinc-100">Olá! Eu sou</h1>
-                            <h2 className="flex w-full justify-end text-3xl sm:text-4xl md:text-3xl lg:text-4xl text-teal-900 dark:text-teal-400 slide">Matheus Fernandes</h2>
-                            <h2 className="flex w-full justify-end text-xl  sm:text-4xl md:text-3xl lg:text-3xl text-zinc-900 dark:text-zinc-100">Desenvolvedor FullStack</h2>
-                        </div>
-                        {/* Botões */}
-                        <div className="flex w-full flex-1 md:justify-end justify-center md:flex-row flex-col md:space-x-4 space-y-2 md:space-y-0 items-center">
-                            <a
-                                href="#projetos"
-                                className="w-full md:w-auto text-center rounded bg-teal-600 px-4 py-2 font-medium text-white box-shadow"
-                            >
-                                Meus Projetos
-                            </a>
-                            <a
-                                href="#contato"
-                                className="w-full md:w-auto text-center rounded border border-zinc-300 px-4 py-2 font-medium text-zinc-900 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 box-shadow"
-                            >
-                                Entre em contato
-                            </a>
-                        </div>
-                    </div>
-                    <div className="hidden md:block sm:w-3 md-w-2 w-1 bg-teal-600 rounded mx-10" aria-hidden />
+        <section
+            id="intro"
+            ref={containerRef}
+            className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 sm:px-8"
+        >
+            <Trail parentRef={containerRef} />
+
+            <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center text-center">                <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-zinc-50 sm:text-6xl lg:text-7xl">
+                Olá, eu sou
+                <span className="mt-2 block">Matheus Fernandes</span>
+            </h1>
+
+                <h2 className="mt-4 text-xl font-semibold text-teal-400 sm:text-2xl lg:text-3xl">
+                    Desenvolvedor FullStack
+                </h2>
+
+                <p className="mt-6 max-w-2xl text-base text-zinc-400 sm:text-lg">
+                    Construo aplicações web e desktop com foco em performance,
+                    boas experiências e código limpo. Do front-end ao back-end,
+                    transformo ideias em produtos reais.
+                </p>
+
+                <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
+                    <a
+                        href="#projetos"
+                        className="group flex items-center gap-2 rounded-full bg-teal-400 px-7 py-3 font-semibold text-[#042f2e] transition-colors hover:bg-teal-300"
+                    >
+                        Ver meus projetos
+                        <ArrowDown size={18} className="transition-transform group-hover:translate-y-0.5" />
+                    </a>
+                    <DownloadCvButton variant="outline" />
+                    <a
+                        href="#contato"
+                        className="rounded-full border border-white/15 px-7 py-3 font-semibold text-zinc-100 transition-colors hover:border-teal-400/50 hover:text-teal-400"
+                    >
+                        Entrar em contato
+                    </a>
                 </div>
-                <a className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-zinc-900 dark:text-zinc-100"
-                    href="#sobre"><ChevronDown size={32} /></a>
+
+                <div className="mt-10 flex items-center gap-4">
+                    {SOCIALS.map(({ href, label, Icon }) => (
+                        <a
+                            key={label}
+                            href={href}
+                            target={href.startsWith("http") ? "_blank" : undefined}
+                            rel="noreferrer"
+                            aria-label={label}
+                            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-zinc-300 transition-colors hover:border-teal-400/50 hover:text-teal-400"
+                        >
+                            <Icon size={20} />
+                        </a>
+                    ))}
+                </div>
             </div>
-        </>
+
+            <a
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-500 transition-colors hover:text-teal-400"
+                href="#sobre"
+                aria-label="Rolar para a seção Sobre"
+            >
+                <ArrowDown size={28} className="animate-bounce" />
+            </a>
+        </section>
     );
 }
