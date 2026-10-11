@@ -5,7 +5,7 @@ const basePath = isProd ? "/portifolio" : "";
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath,
+  basePath: isProd ? "/portifolio" : "",
   assetPrefix: isProd ? "/portifolio/" : "",
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
