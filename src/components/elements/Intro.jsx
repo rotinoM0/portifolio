@@ -2,7 +2,6 @@
 
 import React, { useRef } from "react";
 import Trail from "@/components/mouse-trail/trail";
-import { DownloadCvButton } from "@/components/elements/formacoes";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const SOCIALS = [
@@ -45,7 +44,6 @@ export default function Intro() {
                         Ver meus projetos
                         <ArrowDown size={18} className="transition-transform group-hover:translate-y-0.5" />
                     </a>
-                    <DownloadCvButton variant="outline" />
                     <a
                         href="#contato"
                         className="rounded-full border border-white/15 px-7 py-3 font-semibold text-zinc-100 transition-colors hover:border-teal-400/50 hover:text-teal-400"
