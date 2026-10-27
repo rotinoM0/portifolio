@@ -2,8 +2,6 @@ import { BadgeCheck, CalendarDays, Download, GraduationCap, Languages } from "lu
 import Reveal from "@/components/reveal";
 import { asset } from "@/lib/asset";
 
-const CV_PATH = "/Curriculo_Matheus_Fernandes.pdf";
-
 const EDUCATION = [
     {
         type: "Graduação",
@@ -37,24 +35,6 @@ const LANGUAGES = [
     { name: "Francês", level: "Intermediário" },
 ];
 
-export function DownloadCvButton({ className = "", variant = "solid" }) {
-    const styles =
-        variant === "outline"
-            ? "border border-white/15 text-zinc-100 hover:border-teal-400/50 hover:text-teal-400"
-            : "bg-teal-400 text-[#042f2e] hover:bg-teal-300";
-
-    return (
-        <a
-            href={asset(CV_PATH)}
-            download="Curriculo_Matheus_Fernandes.pdf"
-            className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition-colors ${styles} ${className}`}
-        >
-            <Download size={18} />
-            Baixar CV
-        </a>
-    );
-}
-
 export default function Formacoes() {
     return (
         <section className="relative w-full scroll-mt-24 py-24 lg:py-32" id="formacoes">
@@ -68,7 +48,6 @@ export default function Formacoes() {
                                 Minha trajetória acadêmica, certificações e idiomas.
                             </p>
                         </div>
-                        <DownloadCvButton className="self-start sm:self-auto" />
                     </div>
                 </Reveal>
 
